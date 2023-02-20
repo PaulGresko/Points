@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<points>
+	<point name = "A">
+		<X>3</X>
+		<Y>4</Y>
+	</point>
+	<point name = "B">
+		<X>110</X>
+		<Y>111</Y>
+	</point>
+	<point name = "A">
+		<X>31</X>
+		<Y>1</Y>
+	</point>
+	<point name = "B">
+		<X>2</X>
+		<Y>21</Y>
+	</point>
+	<point name = "A">
+		<X>23</X>
+		<Y>24</Y>
+	</point>
+	<point name = "B">
+		<X>30</X>
+		<Y>31</Y>
+	</point>
+	<point name = "A">
+		<X>2.123</X>
+		<Y>2.004</Y>
+	</point>
+	<point name = "B">
+		<X>3.120</X>
+		<Y>3.1</Y>
+	</point>
+	<point name = "A">
+		<X>0.001</X>
+		<Y>0.02</Y>
+	</point>
+	<point name = "B">
+		<X>-1.30</X>
+		<Y>-3.1</Y>
+	</point>
+	<point name = "A">
+		<X>2.3</X>
+		<Y>-2.4</Y>
+	</point>
+	<point name = "B">
+		<X>0.9</X>
+		<Y>0.2</Y>
+	</point>
+</points>

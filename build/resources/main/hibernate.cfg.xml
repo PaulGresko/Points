@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url"> jdbc:mysql://localhost:3306/points?useSSL=false&amp;serverTimezone=UTC</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">123456789</property>
+
+    <property name="show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="default_schema">points</property>
+    <mapping class="org.example.entity.Record"/>
+    <mapping class="org.example.entity.Point"/>
+    <mapping class="org.example.entity.Calculation"/>
+
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
