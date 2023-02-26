@@ -1,19 +1,13 @@
 package org.example.entity;
 
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.hibernate.annotations.Tables;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
-@Table(name = "point")
+@Table(name = "pointa")
 public class Point implements Serializable {
     @Id
             @SequenceGenerator(name = "point_id_seq_generator",
@@ -32,4 +26,35 @@ public class Point implements Serializable {
     @JoinColumn(name = "record_id")
     private Record record;
 
+
+    public Point(){}
+    public Point(Double x, Double y, Double z) {
+        X = x;
+        Y = y;
+        Z = z;
+    }
+
+    public Double getX() {
+        return X;
+    }
+
+    public void setX(Double x) {
+        X = x;
+    }
+
+    public Double getY() {
+        return Y;
+    }
+
+    public void setY(Double y) {
+        Y = y;
+    }
+
+    public Double getZ() {
+        return Z;
+    }
+
+    public void setZ(Double z) {
+        Z = z;
+    }
 }

@@ -15,10 +15,6 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-
-@Getter
-@Setter
-@NoArgsConstructor
 @Table
 public class Calculation implements Serializable {
     @Id
@@ -36,4 +32,44 @@ public class Calculation implements Serializable {
 
     @OneToMany(mappedBy = "calculation")
     private List<Record> records = new ArrayList<>();
+
+    public Calculation(){}
+    public Calculation(Date t1, Date t2, String method) {
+        this.t1 = t1;
+        this.t2 = t2;
+        this.method = method;
+    }
+
+    public Long getID() {
+        return ID;
+    }
+
+    public Date getStartDate() {
+        return t1;
+    }
+
+    public Date getEndDate() {
+        return t2;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public void setID(Long ID) {
+        this.ID = ID;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.t1 = startDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.t2 = endDate;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
 }

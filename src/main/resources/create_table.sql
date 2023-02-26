@@ -15,13 +15,21 @@ create table record
     calculation_ID integer,
     foreign key (calculation_ID) references calculation (ID)
 );
-create table point
+create table pointA
 (
     x double not null,
     y double not null,
     z  double,
-    ID integer AUTO_INCREMENT,
-    primary key (ID),
     record_ID integer,
+    primary key (record_ID),
+    foreign key (record_ID) references record (ID)
+);
+create table pointB
+(
+    x double not null,
+    y double not null,
+    z  double,
+    record_ID integer,
+    primary key (record_ID),
     foreign key (record_ID) references record (ID)
 );
